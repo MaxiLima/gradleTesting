@@ -1,15 +1,12 @@
 language: java
 
-> Task :compileKotlin UP-TO-DATE
-> Task :compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
-> Task :inspectClassesForKotlinIC
-> Task :jar
-> Task :startScripts
-> Task :distTar
-> Task :distZip
-> Task :assemble
+jdk:
 
-BUILD SUCCESSFUL in 1s
-6 actionable tasks: 5 executed, 1 up-to-date
+  - oraclejdk8  
+  
+  - openjdk8
+  
+
+before_install:
+
+ - chmod +x gradlew
